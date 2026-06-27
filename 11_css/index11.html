@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            
+            width: 65px;
+            height: 200px;
+            border: 2px solid black;
+            overflow: scroll;
+        }
+
+        .box2{
+            width: 65px;
+            height: 200px;
+            border: 2px solid black;
+            overflow: auto;
+            /* agar width kam pad gayi then scroll bar lata hai agar width proper hai then tabhi bhi scroll bar rakta hai  */
+            
+
+        }
+        p{
+            width: 170px;
+            height: 100px;
+            border: 2px solid black;
+            overflow: auto;
+            white-space: nowrap;
+            /* sirf first  wali line ko hi dikhayega niche wali koi bhi rows pe sentences nahi  ayege */
+        }
+        article{
+            width: 170px;
+            height: 100px;
+            border: 2px solid black;
+            overflow: hidden;
+            /* agar hidden hai then scroll nahi hoga  */
+            overflow: scroll;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /* clip hai then scroll hoga and age ke sentencse bhi honge  but allipsis mein age ke sentence nahi hoge but scroll  hoga */
+            
+
+        }
+        span{
+            display: block;
+             width: 100px;
+            height: 120px;
+            border: 2px solid black;
+            overflow: hidden auto ;
+            /* isse alag hoga */
+            text-overflow: ellipsis;
+            overflow: auto hidden;
+            /* and isse alag */
+            /* x aur y axis mai separately kr saktee hai */
+
+        }
+    </style>
+</head>
+<body>
+c
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maiores architecto quam nulla officiis nostrum vero velit excepturi! Ea temporibus cupiditate laboriosam consequatur, ab optio itaque, harum ipsum nulla adipisci quae nobis porro qui nihil nesciunt illum facilis dolor! Praesentium exercitationem amet voluptatem repellat sit numquam magni distinctio cumque quisquam itaque a, id nam aperiam doloremque neque in assumenda aliquid, deleniti iste quis facere cupiditate tempora! Ratione, impedit? Voluptatibus aliquid repellendus beatae nostrum, repellat, vero, aperiam vitae omnis non laborum saepe eaque voluptatem commodi distinctio mollitia ullam.
+    </div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque ut delectus possimus a atque totam libero. Sunt quam, odio illo facere natus accusamus laudantium id aut quasi totam amet quidem ab nesciunt, eum possimus sit. Eos veritatis sunt corrupti sapiente pariatur dolorum recusandae libero voluptatibus ex! Vel provident explicabo officia cumque nemo, molestias earum doloremque corrupti aspernatur, natus quos alias dignissimos, dolorum possimus saepe fuga veniam!    </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aspernatur ut, aliquam expedita exercitationem nam animi officiis dolores, harum pariatur totam quo, beatae necessitatibus accusantium distinctio dolorum fugiat veritatis placeat quia obcaecati.
+        </p>
+
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aspernatur provident expedita repudiandae dignissimos dolores culpa fugit itaque illum voluptatum quos esse, neque beatae libero consectetur, quidem maxime sunt nisi maiores placeat!</article>
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis ullam veritatis sunt, aliquam expedita, mollitia pariatur vero porro minus hic quaerat recusandae quia fugiat. Facere aut necessitatibus ut iusto eligendi laudantium!
+        </span>
+    
+</body>
+</html>

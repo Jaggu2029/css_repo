@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties </title>
+    <style>
+        .box1{
+            display: inline-block;
+            border: 2px solid black;
+            background-color: cyan;
+            margin: 45px;
+            padding: 45px;
+        }
+        .box2{
+            display: inline;
+            background-color: red;
+            
+        }
+        span{
+            
+            background-color: black;
+            color: aliceblue;
+            border: 2px solid cyan;
+            padding: 15px;
+            margin: 80px;
+        }
+        .box3{
+            /* display: none; */
+            /* gayab ho jayega */
+
+            
+            visibility: hidden;
+            /* invisible hoga but hoga waha ki space occupied hogi */
+        }
+        p{
+            display: inline;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Tillana:wght@400;500;600;700;800&display=swap');
+         
+        .tillana{
+  font-family: "Tillana", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    </style>
+</head>
+<body>
+    <div> पवन गणेश जागूष्टे </div>
+    <div class="box1">This is my para </div>
+    <p>
+    <div class="box2">
+        
+        This is new para 2
+
+        <!-- jab maine is div ko para mein dala then kuch alag result dikha raha tha   -->
+         
+         <!-- i got it after few days it happens bcoz p element ki properties block hai and hame usko inline mein pehle change karna padega -->
+    </div>
+    </p>
+    <span>This is third para 3</span>
+    <span>fouth not exist</span>
+
+    <!-- inline element is not affected by width << -->
+    <!-- agar margin and padding bhi karenge then upar ka nahi hoga inline element ka -->
+     <!-- to do this we have to acquire inline-block prooperty -->
+    <p>
+        <div class="box3">This is my next para</div>
+    </p>
+
+    <div class="tillana">  पवन गणेश जागूष्टे  </div>
+
+
+</body>
+</html>

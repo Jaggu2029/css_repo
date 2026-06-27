@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* Element selector */
+        div{
+            background-color: black;
+            color: white;
+        }
+
+        /* class selector  */
+        .red{
+            color: aquamarine;
+            background-color: brown;
+        }
+
+        /* ID selector */
+        #green{
+            color: blueviolet;
+            background-color: darkorange;
+        }
+
+       
+        /* Child selector */
+        /* div ke andar agar direct child hua toh hi apply hoga ye nahi toh nahi */
+        div > p{
+            color: blue;
+            background-color: dodgerblue;
+        }
+
+        /* desecendant selector */
+        div p{
+            color: cyan;
+            background-color: khaki;
+        }
+
+        /* universal selector */
+        *{
+            margin: 4;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+        a:visited{
+            color: brown;
+        }
+        a:link{
+            color: aqua;
+        }
+        a:active{
+            color: red;
+            background-color: red;
+        }
+        a:hover{
+            color: yellow;
+            background-color: cyan;
+        }
+        /* pseudo element selector */
+        p:first-child{
+            background-color: black;
+            color: violet;
+        }
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div >
+        Hello World
+    </div>
+
+    <div class="red">
+        Hello bhai
+    </div>
+    
+    <div id="green">
+         doremon nobita
+    </div>
+
+    <div>
+        <p>
+            shinchan bhai
+        </p>
+    </div>
+
+    <div>
+        <article>
+             bjdbcjkdbk
+            <p>
+                bhuvaneshwar kumar
+                <p>hdhcslkj</p>
+            </p>
+            <p> saini</p>
+        </article>
+    </div>
+
+    <a target="_blank" href="https:www.google1.com">Go to google</a>
+    <a target="_blank" href="https:www.facebook.com">Go to facebook</a>
+
+    <div>
+        <p>visted hover link </p>
+        <p>active</p>
+    </div>
+    
+</body>
+</html>

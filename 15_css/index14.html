@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable colors</title>
+    <style>
+
+        :root{
+            --color : violet;
+            --secolor : rgb(251, 5, 251);
+            /* global variable */
+            --defpad : 3px;
+            --defop : 0.5;
+
+    
+        }
+        .box{
+         border: 2px solid black;
+         width: 900px;
+         height: 1000px;
+         border-radius: 45px;
+         margin: 50px auto;
+        }
+        .box2{
+            text-align: center;
+           
+            padding: 30px   ;
+            
+
+        }
+        div span{
+            border: 2px solid black;
+            padding: 3px;
+            margin: 10px ;
+            border-radius: 15px;
+            background-color: var(--secolor);
+            padding: var(--defpad);
+            /* color jise hi use kar sakte hai */
+
+        }
+        .t{
+             --color : rgb(239, 15, 15);
+
+            background-color: var(--color) ;
+            opacity: var(--defop);
+
+            /* it becomes local variable */
+
+        }
+        .y{
+             --color : rgb(11, 144, 246);
+             background-color: var(--color,purple);
+             /* agar color namak variable nahi hoga then backup mein purple apply hoga */
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+        <div class="box2">
+            <span class="t">NETFLIX</span>
+            <span>YOUTUBE</span>
+            <span class="y">FACEBOOK</span>
+            <span>INSTAGRAM</span>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

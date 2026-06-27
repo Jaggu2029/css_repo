@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+              color: yellow;
+              /* pseudo element selector hai isliye iski priority das guna hogi uni se */
+        }
+        .boxes *{
+            color: aqua;
+            /* .boxes hi lena padega box nahi kyu ki box ke andar ek bhi element nahi hai  */
+        }
+        .book{
+            margin: 2px;
+            /* border: 2px solid black; */
+            /* yeh kiya then para wale elemt mein border lagegi */
+            /* chahiye toh comment kiya hua dekh lo */
+        }
+        .y{
+            border: 2px solid black;
+        }
+
+        p,div,[data-c="x"], .box{
+            color: black;
+            /* group element selector */
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugiat excepturi doloremque perferendis, animi tenetur explicabo aliquid dolorum voluptas, asperiores soluta. Deleniti magni laudantium sunt blanditiis ratione similique libero, quidem id iusto ipsum. Libero aspernatur cum rerum optio dolorum tempora culpa incidunt aperiam? Fugit, deserunt ipsum vitae reprehenderit debitis beatae eum doloremque? Nam pariatur animi soluta veniam ad explicabo corrupti doloribus nihil, libero asperiores perspiciatis optio? Iste doloremque sed delectus dolorum quae? Vero laborum dignissimos natus?</div>
+
+
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, laudantium dolorum atque maiores quia perferendis recusandae quae accusantium ipsum expedita nihil praesentium ullam illum optio rerum labore fugit esse veniam aliquid provident vero. Pariatur, praesentium eius quibusdam sint voluptates accusantium. Voluptate harum totam consequuntur libero.
+        </div>
+
+        <p class="book">
+            ihuyyfdghjkl 
+            <div data-c="x" class="book1 y">HOME</div>
+            <div class="book2 y">ABOUT</div>
+            <div class="book3 y">PHONE</div>
+        </p>
+    </div>
+    
+</body>
+</html>

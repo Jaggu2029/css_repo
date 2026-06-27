@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Coding</title>
+    <style>
+        p{
+            color: #e89ce5; /* hex color code*/
+            color: rgb(240, 141, 20);
+            color: rgba(237, 67, 240, 0.882);
+            color: hsl(236, 77%, 60%);
+           
+
+            /* same for background */
+            /* attribute selector */
+        }
+            p[data-x=a]{
+                background-color: red;
+            }
+
+            /* span{
+                color: blueviolet !important;
+            }
+         */
+
+    </style>
+</head>
+<body>
+    <p data-x="a">Lorem ipsum dolor sit amet consectetur.</p>
+    <span style="color: red;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi excepturi recusandae velit aliquam atque neque, aperiam beatae quasi dolorum reprehenderit illo perferendis impedit sunt enim, sint similique iusto maiores, libero eos quaerat deserunt itaque.
+    </span>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+            box-shadow:9px 10px 10px 1px rgb(130, 68, 93);
+            text-shadow: 2px 2px 4px rgb(56, 189, 230);
+            
+        }
+
+        .box1{
+            border: 2px solid black;
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+            /* inset */
+             box-shadow: inset 4px -6px 13px 2px rgb(56, 189, 230);
+             /* outline */
+             outline: 3px solid red;
+             outline-offset: 4px;
+
+             /* border radius */
+             border-radius: 23px;
+
+             /* jaise jaise border ko karoge outline waise hi follow karegi  */
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <p class="box">
+        this is my first para
+    </p>
+    <p class="box1">
+        this is my second para
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 70vh;
+            display: flex;
+            /* various types  : */
+            justify-content: center;
+            /* justify-content: flex-end; end mwin chala jayega */
+            /* justify-content: flex-start; start mein aayega  */
+            /* justify-content: space-around; spaced items aayenge  */
+            /* justify-content: space-between; sirf bich mein ati hai space is mein  */
+            /* justify-content: baseline; ye karne se ek hi centre mein ate hai content */
+            /* flex-direction: column; ek column mein aa jate hai agar colum reverse karenge then ulta aate hai  */
+            flex-wrap: wrap;
+             /* neeche aa jayega content and justify centre kiya hai is liye bich mein */
+        
+            align-items: center;
+            align-content: center; 
+            /* pura content centre mein aa jayega  items in multi line is content*/
+            /* justify-content: flex-end; */
+            gap: 10px;
+            /* agar margin off hai then gap prop ka use kar sakte  hai */
+            row-gap: 20px;
+            column-gap: 2px;
+            /* you can also write in this wauy  */
+            gap: 20px 5px;
+
+
+
+        }
+        .items{
+            height: 50px;
+            width: 80px;
+            border: 2px solid black;
+            background-color: deepskyblue;
+            /* margin: 5px; */
+            
+        }
+        .kohli{
+            order: 5;
+        }
+        .dhoni{
+            order: 1;
+        }
+        .messi{
+            order: 2;
+            flex-grow: 2;
+        }
+        /* jiska order jyada hoga woh sabse last jayega  */
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items messi">messi</div>
+            <div class="items ronaldo">ronaldo</div>
+            <div class="items dhoni">dhoni</div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items rohit">rohit</div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items kohli">kohli</div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+        </div>
+    </main>
+    
+</body>
+</html>

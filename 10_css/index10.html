@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List style</title>
+    <style>
+        .stl{
+            list-style: devanagari;
+            background-color: cyan;
+            /* numbering  ke   background mein nahi ata  */
+            list-style-position: inside;
+            /* lisst style karne se border apply karenge then markings bhi inside hi hongi */
+            border: 2px solid black;
+            /* list-style-image: url(image.png);
+            list-style-type: ; */
+            
+
+           
+        }
+        .endl{
+             list-style: none;
+             /* width: 25px; */
+             padding: 23px;
+             /* padding hamesha ham idhar hi dete hai */
+             border: 2px solid black;
+             outline: 2px solid red ;
+             outline-offset: 4px;
+              border-radius: 23px;
+              
+
+
+            
+
+        }
+        .flex{
+            display: flex;
+            width: 560px;
+            margin: 20px auto;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="flex">
+            <li class="endl">Home</li>
+            <li class="endl">About</li>
+            <li class="endl">Contact</li>
+            <!-- display flex hamesha parent element par lagate hai which holds elements -->
+        </ul>
+        <ul>
+            <li class="stl">school</li>
+            <li class="stl">tution</li>
+            <li class="stl">college</li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
